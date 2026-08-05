@@ -1,0 +1,324 @@
+[
+    {
+        "time": "2026-07-27 19:42:49",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=lt title=Vairavimo mokykla Vilniuje: pasirinkite geriausią variantą"
+    },
+    {
+        "time": "2026-07-27 19:44:32",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-27 20:09:46",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=uk title=Автошкола у Вільнюсі: оберіть найкращий варіант"
+    },
+    {
+        "time": "2026-07-27 20:15:13",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=uk title=Автошкола у Вільнюсі: оберіть найкращий варіант"
+    },
+    {
+        "time": "2026-07-27 20:15:29",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=uk title=Автошкола у Вільнюсі: оберіть найкращий варіант"
+    },
+    {
+        "time": "2026-07-27 20:15:45",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=uk title=Автошкола у Вільнюсі: оберіть найкращий варіант"
+    },
+    {
+        "time": "2026-07-27 20:39:51",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "order_status",
+        "details": "id=2 -> done"
+    },
+    {
+        "time": "2026-07-27 21:44:27",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "news_save",
+        "details": "lang=lt title=Atraskite Vilnių: Mūsų vairavimo mokyklos siūlomos galimybės"
+    },
+    {
+        "time": "2026-07-27 21:57:31",
+        "user": "admin",
+        "ip": "2a0d:3341:bbec:3908:cc90:774b:6aae:40ca",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-27 22:43:34",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-27 22:43:46",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "order_delete",
+        "details": "id=2"
+    },
+    {
+        "time": "2026-07-27 22:44:45",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "news_delete",
+        "details": "lang=lt id=4"
+    },
+    {
+        "time": "2026-07-27 22:44:50",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "news_delete",
+        "details": "lang=lt id=6"
+    },
+    {
+        "time": "2026-07-28 07:50:06",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 11:00:02",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 14:43:13",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=4"
+    },
+    {
+        "time": "2026-07-28 14:43:19",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_status",
+        "details": "id=3 -> new"
+    },
+    {
+        "time": "2026-07-28 14:43:22",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_status",
+        "details": "id=3 -> done"
+    },
+    {
+        "time": "2026-07-28 14:43:23",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_status",
+        "details": "id=3 -> contacted"
+    },
+    {
+        "time": "2026-07-28 15:25:01",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 15:28:54",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_status",
+        "details": "id=5 -> contacted"
+    },
+    {
+        "time": "2026-07-28 15:28:56",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_status",
+        "details": "id=5 -> done"
+    },
+    {
+        "time": "2026-07-28 15:29:32",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "category_save",
+        "details": "lang=lt slug=a"
+    },
+    {
+        "time": "2026-07-28 15:30:01",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "settings_save",
+        "details": "section=contacts"
+    },
+    {
+        "time": "2026-07-28 15:53:01",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=6"
+    },
+    {
+        "time": "2026-07-28 15:53:03",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=5"
+    },
+    {
+        "time": "2026-07-28 15:53:52",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 15:56:20",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "payment_save",
+        "details": ""
+    },
+    {
+        "time": "2026-07-28 18:26:54",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 18:31:29",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=5"
+    },
+    {
+        "time": "2026-07-28 18:31:32",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=4"
+    },
+    {
+        "time": "2026-07-28 18:31:35",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "order_delete",
+        "details": "id=4"
+    },
+    {
+        "time": "2026-07-28 18:32:36",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_upload",
+        "details": "id=1"
+    },
+    {
+        "time": "2026-07-28 18:32:42",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_caption_save",
+        "details": "id=1"
+    },
+    {
+        "time": "2026-07-28 18:32:47",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_caption_save",
+        "details": "id=1"
+    },
+    {
+        "time": "2026-07-28 18:33:07",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_upload",
+        "details": "id=2"
+    },
+    {
+        "time": "2026-07-28 18:33:14",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_upload",
+        "details": "id=3"
+    },
+    {
+        "time": "2026-07-28 18:33:15",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_caption_save",
+        "details": "id=1"
+    },
+    {
+        "time": "2026-07-28 18:33:19",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_delete",
+        "details": "id=3"
+    },
+    {
+        "time": "2026-07-28 18:33:25",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "gallery_caption_save",
+        "details": "id=2"
+    },
+    {
+        "time": "2026-07-28 18:46:11",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "news_save",
+        "details": "lang=uk title=Відкрийте для себе Вільнюс: можливості нашої автошколи"
+    },
+    {
+        "time": "2026-07-28 18:51:00",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 19:26:55",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 19:44:15",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 21:03:38",
+        "user": "admin",
+        "ip": "46.15.140.244",
+        "action": "login",
+        "details": "Успішний вхід"
+    },
+    {
+        "time": "2026-07-28 22:25:53",
+        "user": "admin",
+        "ip": "209.198.157.120",
+        "action": "login",
+        "details": "Успішний вхід"
+    }
+]

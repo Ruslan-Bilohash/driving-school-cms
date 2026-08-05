@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Ole Hansen",
+        "phone": "+47 900 11 001",
+        "email": "ole.hansen@example.no",
+        "category": "B",
+        "message": "Vil starte klasse B i august. Helgekurs?",
+        "lang": "no",
+        "source_page": "/",
+        "status": "new",
+        "email_sent": false,
+        "telegram_sent": false,
+        "created_at": "2026-07-20 09:15:00",
+        "id": 1
+    },
+    {
+        "name": "Ingrid Berg",
+        "phone": "+47 900 22 002",
+        "email": "ingrid.berg@example.no",
+        "category": "A",
+        "message": "Motorsykkel A2 — kveldskurs i Oslo.",
+        "lang": "no",
+        "source_page": "/kategorija-a.php",
+        "status": "contacted",
+        "email_sent": false,
+        "telegram_sent": false,
+        "created_at": "2026-07-21 14:30:00",
+        "id": 2
+    },
+    {
+        "name": "Erik Johansen",
+        "phone": "+47 900 33 003",
+        "email": "erik.j@example.no",
+        "category": "CE",
+        "message": "Trenger C+E for jobb. Når er neste oppstart?",
+        "lang": "no",
+        "source_page": "/kategorija-ce.php",
+        "status": "new",
+        "email_sent": false,
+        "telegram_sent": false,
+        "created_at": "2026-07-22 11:05:00",
+        "id": 3
+    },
+    {
+        "name": "Anna Kovalenko",
+        "phone": "+47 900 44 004",
+        "email": "anna.k@example.com",
+        "category": "B",
+        "message": "English lessons available?",
+        "lang": "en",
+        "source_page": "/en/",
+        "status": "new",
+        "email_sent": false,
+        "telegram_sent": false,
+        "created_at": "2026-07-23 16:40:00",
+        "id": 4
+    },
+    {
+        "name": "Callback demo",
+        "phone": "+47 900 55 005",
+        "email": "",
+        "category": "Callback",
+        "message": "Ring meg tilbake i morgen.",
+        "lang": "no",
+        "source_page": "/",
+        "status": "contacted",
+        "email_sent": false,
+        "telegram_sent": false,
+        "created_at": "2026-07-24 08:20:00",
+        "id": 5
+    }
+]

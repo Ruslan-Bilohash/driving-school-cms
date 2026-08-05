@@ -1,0 +1,11 @@
+{
+  "name": "Autoteisės — vairavimo mokykla Vilniuje",
+  "short_name": "Autoteisės",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1120",
+  "theme_color": "#0a1120",
+  "icons": [
+    { "src": "/assets/img/favicon-v3.png", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

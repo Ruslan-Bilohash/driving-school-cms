@@ -1,0 +1,33 @@
+﻿DirectoryIndex index.php
+
+RewriteEngine On
+
+# Base subdirectory
+RewriteBase /driving-school/cms/
+
+# Path-based cache-busting for CSS/JS
+RewriteRule ^assets/(css|js)/([^/]+)\.v[0-9]+\.(css|js)$ assets/$1/$2.$3 [L]
+
+ErrorDocument 404 /driving-school/cms/404.php
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 5 minutes"
+  ExpiresByType application/javascript "access plus 5 minutes"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+Options -Indexes

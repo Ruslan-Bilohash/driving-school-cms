@@ -1,0 +1,41 @@
+{
+    "a": {
+        "title": "A, A1, A2 kategorijos",
+        "h1": "Motociklų vairavimo kursai (A, A1, A2) Vilniuje",
+        "meta_title": "Motociklo teisės Vilniuje — A1, A2, A kategorijos kursai | Autoteisės",
+        "meta_description": "Motociklų vairavimo kursai Vilniuje: A1, A2 ir A kategorijos. Kaina 300 €, aiškūs amžiaus reikalavimai, patyrę instruktoriai. Registruokitės internetu.",
+        "intro": "A kategorijos grupė apima A1 (motociklai iki 125 cm³), A2 (iki 35 kW galios) ir A (be galios apribojimų) vairavimo teises.",
+        "who_for": "Tinka norintiems vairuoti motociklą — nuo mažesnės galios modelių paaugliams iki galingų motociklų patyrusiems vairuotojams.",
+        "duration": "Apie 1–2 mėnesius, priklausomai nuo pasirinktos kategorijos ir patirties.",
+        "image": "",
+        "requirements": [
+            "A1 kategorijai — nuo 16 metų",
+            "A2 kategorijai — nuo 18 metų",
+            "A kategorijai — nuo 24 metų (arba nuo 20 m., jau turint A2 kategoriją ne trumpiau kaip 2 metus)",
+            "Sveikatos pažyma ir teorijos egzaminas Regitroje"
+        ],
+        "includes": [
+            "Teorijos kursas",
+            "Praktinio vairavimo pamokos aikštelėje ir keliuose",
+            "Pasiruošimas Regitros egzaminui",
+            "Konsultacija dėl tinkamiausios kategorijos pasirinkimo"
+        ],
+        "related": [
+            "b"
+        ],
+        "faq": [
+            {
+                "q": "Kiek kainuoja motociklo kategorijos kursas?",
+                "a": "Pilno A, A1 ar A2 kategorijos kurso kaina — 300 €."
+            },
+            {
+                "q": "Ar reikia turėti B kategoriją, norint įgyti motociklo teises?",
+                "a": "Ne, motociklo kategorijos yra visiškai savarankiškos ir nepriklauso nuo B kategorijos turėjimo."
+            },
+            {
+                "q": "Kokį amžių turiu sulaukti, norėdamas vairuoti galingą motociklą (A)?",
+                "a": "A kategorijai be apribojimų reikia būti sulaukus 24 metų, arba 20 metų, jei jau 2 metus turite A2 kategoriją."
+            }
+        ]
+    }
+}

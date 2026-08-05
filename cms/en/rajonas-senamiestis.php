@@ -1,0 +1,4 @@
+<?php
+$lang = 'en';
+$slug = 'senamiestis';
+require __DIR__ . '/../inc/district_page.php';

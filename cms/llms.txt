@@ -1,0 +1,14 @@
+﻿# Driving School CMS
+
+> PHP CMS for driving schools / trafikkskoler. Live demo: https://bilohash.com/driving-school/cms/
+> Product: https://bilohash.com/driving-school/
+> Admin demo: demo / demo
+
+## Stack
+- PHP 8, JSON storage, multilingual NO/EN/UK/RU
+- Schema.org DrivingSchool, FAQPage, BreadcrumbList
+- NOK prices, Oslo demo branding (fictional)
+
+## Cron
+- /driving-school/cms/cron/cleanup.php
+- /driving-school/cms/cron/seed-demo.php
