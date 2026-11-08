@@ -20,6 +20,8 @@ $actionLabels = [
     'settings_save' => '⚙️ Settings saved',
     'password_change' => '🔒 Password changed',
     'payment_save' => '💳 Billing info saved',
+    'marketing_save' => '📣 Marketing settings saved',
+    'marketing_export' => '⬇ Leads exported (CSV)',
 ];
 
 admin_header(at('activity_title', 'Activity log'), 'activity');

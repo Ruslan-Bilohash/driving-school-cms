@@ -46,6 +46,7 @@ function admin_header(string $title, string $active): void {
     <a href="<?= BASE_PATH ?>/admin/categories.php" class="<?= $active === 'categories' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_categories')) ?></a>
     <a href="<?= BASE_PATH ?>/admin/news.php" class="<?= $active === 'news' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_news')) ?></a>
     <a href="<?= BASE_PATH ?>/admin/gallery.php" class="<?= $active === 'gallery' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_gallery', 'Gallery')) ?></a>
+    <a href="<?= BASE_PATH ?>/admin/marketing.php" class="<?= $active === 'marketing' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_marketing', 'Marketing')) ?></a>
     <a href="<?= BASE_PATH ?>/admin/settings.php" class="<?= $active === 'settings' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_settings')) ?></a>
     <a href="<?= BASE_PATH ?>/admin/payment.php" class="<?= $active === 'payment' ? 'active' : '' ?>" style="position:relative"><?= htmlspecialchars(at('nav_payment')) ?><?php if ($__unpaidCount > 0): ?><span class="nav-badge"><?= $__unpaidCount ?></span><?php endif; ?></a>
     <a href="<?= BASE_PATH ?>/admin/activity.php" class="<?= $active === 'activity' ? 'active' : '' ?>"><?= htmlspecialchars(at('nav_activity', 'Activity')) ?></a>

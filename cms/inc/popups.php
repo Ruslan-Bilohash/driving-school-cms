@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/settings.php';
 require_once __DIR__ . '/icons.php';
+require_once __DIR__ . '/marketing.php';
 
 function render_popups(array $t, string $lang): void {
     $s = get_settings();
@@ -71,4 +72,5 @@ function render_popups(array $t, string $lang): void {
     </script>
     <?php endif; ?>
     <?php
+    render_marketing($t, $lang);
 }

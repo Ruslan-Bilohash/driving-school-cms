@@ -7,7 +7,7 @@
 | **Live landing** | https://bilohash.com/driving-school/ |
 | **Live demo** | https://bilohash.com/driving-school/cms/ |
 | **Admin demo** | https://bilohash.com/driving-school/cms/admin/login.php |
-| **Version** | **1.0.0** |
+| **Version** | **1.1.0** |
 | **Author** | [BILOHASH](https://bilohash.com/) · [Ruslan Bilohash](https://github.com/Ruslan-Bilohash) |
 | **Donate / Support** | https://bilohash.com/donate.php |
 | **License** | See repository (demo portfolio product) |
@@ -58,6 +58,8 @@ Full set: [`screenshot/`](screenshot/) — also on the [live landing](https://bi
 - **Settings** — school info, phones, hours, billing portal link
 - **Activity log** — admin actions
 - **Payment** — demo billing notes / client portal link (no live API keys in repo)
+- **Marketing** — lead sources & campaigns dashboard, UTM / referrer attribution on every request,
+  GA4 / Google Tag Manager / Meta Pixel (consent-aware), conversion events, promo banner, UTM link builder, CSV export
 
 ### Landing page (`/driving-school/`)
 - Product marketing page with multi-lang copy
@@ -139,6 +141,7 @@ define('SITE_URL', 'https://example.com/driving-school/cms');
 | Categories | Licence classes, prices NOK, multi-lang content |
 | Districts | Local SEO landing pages |
 | Leads | Contact / callback forms → admin orders |
+| Marketing | Channel / source / campaign stats, UTM attribution, GA4 / GTM / Meta Pixel, promo banner, UTM builder, CSV |
 | News | Multi-lang posts, admin editor |
 | Gallery | Image gallery |
 | Admin | Settings, activity log, media uploads |
@@ -167,6 +170,9 @@ define('SITE_URL', 'https://example.com/driving-school/cms');
 - Change demo admin password (`demo` / `demo`) on real installs.
 - CSRF / session checks apply on admin forms.
 - Public demo runs with `DS_DEMO_MODE` — real Telegram / payment side-effects disabled.
+- Marketing: analytics IDs cannot be changed in demo mode; promo banner links are limited to the own site.
+  If you enable GA4 / GTM / Meta Pixel, update the cookie-banner and privacy texts accordingly
+  (keep "load trackers only after consent" on for GDPR).
 
 ---
 

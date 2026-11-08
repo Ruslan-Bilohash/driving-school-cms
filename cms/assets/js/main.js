@@ -141,6 +141,13 @@
     });
   }
 
+  /* Marketing: notify marketing.js about a successful request (conversion events) */
+  function dsLeadEvent(formName, category){
+    try {
+      document.dispatchEvent(new CustomEvent('ds:lead', { detail: { form: formName, category: category || '' } }));
+    } catch (e) { /* old browsers */ }
+  }
+
   /* Contact form submit */
   var form = document.getElementById('contactForm');
   if (form) {
@@ -173,12 +180,13 @@
       var data = new FormData(form);
       data.append('recaptcha_token', rc.token);
 
-      fetch('/api/contact.php', { method: 'POST', body: data })
+      fetch((window.DS_BASE || '') + '/api/contact.php', { method: 'POST', body: data })
         .then(function(r){ return r.json(); })
         .then(function(res){
           if (res && res.success) {
             status.textContent = i18n.success || 'Thank you!';
             status.className = 'form-status ok';
+            dsLeadEvent('contact', data.get('category'));
             form.reset();
             if (window.grecaptcha && rc.widgetLoaded) grecaptcha.reset(rc.id);
           } else {
@@ -263,12 +271,13 @@
       cbBtn.disabled = true;
       var cbData = new FormData(callbackForm);
       cbData.append('recaptcha_token', cbRc.token);
-      fetch('/api/contact.php', { method: 'POST', body: cbData })
+      fetch((window.DS_BASE || '') + '/api/contact.php', { method: 'POST', body: cbData })
         .then(function(r){ return r.json(); })
         .then(function(res){
           if (res && res.success) {
             cbStatus.textContent = cbI18n.success || 'Thank you!';
             cbStatus.className = 'form-status ok';
+            dsLeadEvent('callback', cbData.get('category'));
             callbackForm.reset();
             if (window.grecaptcha && cbRc.widgetLoaded) grecaptcha.reset(cbRc.id);
             localStorage.setItem('callbackDismissedAt', String(Date.now()));
@@ -324,7 +333,7 @@
       fd.append('message', msg);
       fd.append('history', JSON.stringify(chatHistory.slice(0, -1)));
 
-      fetch('/api/chat.php', { method: 'POST', body: fd })
+      fetch((window.DS_BASE || '') + '/api/chat.php', { method: 'POST', body: fd })
         .then(function(r){ return r.json(); })
         .then(function(res){
           thinking.remove();

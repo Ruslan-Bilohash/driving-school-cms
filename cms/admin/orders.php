@@ -4,6 +4,7 @@ require_once __DIR__ . '/../inc/auth.php';
 require_once __DIR__ . '/../inc/store.php';
 require_once __DIR__ . '/../inc/icons.php';
 require_once __DIR__ . '/../inc/activity_log.php';
+require_once __DIR__ . '/../inc/marketing.php';
 require_once __DIR__ . '/../inc/admin_layout.php';
 
 require_login();
@@ -69,6 +70,9 @@ admin_header(at('orders_title'), 'orders');
         <span class="chip chip-muted"><?= strtoupper(htmlspecialchars($o['lang'] ?? '')) ?></span>
         <?php if (!empty($o['source_page'])): ?>
           <span class="chip chip-muted" title="<?= htmlspecialchars(at('orders_source_page', 'Source page')) ?>">📍 <?= htmlspecialchars($o['source_page']) ?></span>
+        <?php endif; ?>
+        <?php if (isset($o['marketing']) && is_array($o['marketing'])): $mkChannel = marketing_channel($o); ?>
+          <a class="chip chip-mk" href="<?= BASE_PATH ?>/admin/marketing.php" title="<?= htmlspecialchars(at('mk_col_source')) ?>">📣 <?= htmlspecialchars(at('mk_channel_' . $mkChannel)) ?> · <?= htmlspecialchars(marketing_source_label($o)) ?><?= !empty($o['marketing']['utm_campaign']) ? ' · ' . htmlspecialchars($o['marketing']['utm_campaign']) : '' ?></a>
         <?php endif; ?>
         <span class="chip chip-muted" title="Email"><?= !empty($o['email_sent']) ? '✅' : '⚠️' ?> email</span>
         <span class="chip chip-muted" title="Telegram"><?= !empty($o['telegram_sent']) ? '✅' : '⚠️' ?> tg</span>

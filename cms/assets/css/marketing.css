@@ -1,0 +1,33 @@
+/* ==== Driving School CMS — marketing (promo banner) ==== */
+.ds-promo{position:relative;z-index:180;font-family:var(--font-body,'Manrope',system-ui,sans-serif);font-size:.92rem;line-height:1.4}
+.ds-promo[hidden]{display:none}
+.ds-promo-inner{max-width:var(--container,1180px);margin:0 auto;padding:10px 52px 10px 20px;display:flex;align-items:center;justify-content:center;gap:10px 16px;flex-wrap:wrap;text-align:center}
+.ds-promo-text{font-weight:700}
+.ds-promo-cta{display:inline-flex;align-items:center;padding:6px 16px;border-radius:999px;font-weight:800;font-size:.85rem;text-decoration:none;white-space:nowrap;transition:transform .2s ease,box-shadow .2s ease}
+.ds-promo-cta:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.ds-promo-close{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:none;background:rgba(255,255,255,.18);color:inherit;font-size:1.25rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+.ds-promo-close:hover{background:rgba(255,255,255,.32)}
+.ds-promo-close:focus-visible,.ds-promo-cta:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+.ds-promo-primary{background:linear-gradient(135deg,#2f6fed,#1d4fc4);color:#fff}
+.ds-promo-primary .ds-promo-cta{background:#fff;color:#1d4fc4}
+
+.ds-promo-accent{background:linear-gradient(135deg,#ffb020,#e2960a);color:#121826}
+.ds-promo-accent .ds-promo-cta{background:#121826;color:#fff}
+.ds-promo-accent .ds-promo-close{background:rgba(18,24,38,.12)}
+.ds-promo-accent .ds-promo-close:hover{background:rgba(18,24,38,.22)}
+
+.ds-promo-success{background:linear-gradient(135deg,#1c9a5b,#137a47);color:#fff}
+.ds-promo-success .ds-promo-cta{background:#fff;color:#137a47}
+
+.ds-promo-dark{background:#0a1120;color:#eef1f8}
+.ds-promo-dark .ds-promo-cta{background:#ffb020;color:#121826}
+
+@media(max-width:600px){
+  .ds-promo{font-size:.84rem}
+  .ds-promo-inner{padding:9px 46px 9px 14px;gap:8px}
+  .ds-promo-close{right:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ds-promo-cta{transition:none}
+}

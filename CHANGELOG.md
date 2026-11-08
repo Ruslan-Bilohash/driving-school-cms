@@ -9,6 +9,36 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.1.0] — 2026-11-08
+
+### Added — Marketing module (`/cms/admin/marketing.php`)
+- **Overview dashboard** — requests per day, status funnel (new → contacted → done), conversion rate,
+  share of requests with source data, breakdowns by channel, source, campaign, licence category,
+  landing page and language; periods 7 / 30 / 90 / 365 days / all time
+- **Lead attribution** — `assets/js/marketing.js` captures `utm_*`, external referrer, landing page and
+  click IDs (`gclid`, `fbclid`, `msclkid`, `ttclid`) and sends them with the contact form and callback popup;
+  every new request in `orders.json` gets a `marketing` block with an auto-detected channel
+  (paid, social, organic, email, referral, campaign, direct)
+- **Analytics & pixels** — Google Analytics 4, Google Tag Manager and Meta Pixel by ID only (validated),
+  optional loading only after cookie consent (GDPR); conversion events `generate_lead` / `Lead`,
+  `contact_click` / `Contact` (phone, email, WhatsApp, Telegram), `promo_click`, `promo_close` + `dataLayer` events
+- **Promo banner** — bar above the header on all public pages: per-language text and button,
+  4 colour styles, start/end dates, dismissible (re-appears when the text changes), live preview in admin;
+  on the demo only on-site links are allowed
+- **UTM link builder** — presets (Facebook, Instagram, Google Ads, TikTok, Snapchat, FINN.no, newsletter, flyer/QR)
+- **CSV export** of requests with attribution (UTF-8 BOM, `;` separator, formula-injection safe)
+- Source / campaign chip on every request in **Admin → Requests**; marketing actions in the activity log
+- Admin UI translations: EN, UK, RU, NO (SV / PL / LT fall back to English)
+
+### Fixed
+- `api/contact.php` — UTF-8 BOM before `declare(strict_types=1)` caused a fatal error, so no request could be sent;
+  file rewritten: correct UTF-8 messages, Norwegian (`nb` / `no`), Swedish and Polish messages, site name instead
+  of old branding, request counts as successful once it is saved in the admin
+- Contact / callback / chat forms posted to `/api/...` ignoring `BASE_PATH` — now use `window.DS_BASE`
+- UTF-8 BOM removed from 38 PHP files — every public page started with a BOM, which pushed `<title>` and meta
+  tags out of `<head>` (SEO) and also broke `admin/ai-generate.php`
+- Admin: outline buttons were unreadable on hover; top menu wraps instead of hiding "Log out"
+
 ## [1.0.0] — 2026-08-05
 
 First public open-source release on GitHub: [Ruslan-Bilohash/driving-school-cms](https://github.com/Ruslan-Bilohash/driving-school-cms).

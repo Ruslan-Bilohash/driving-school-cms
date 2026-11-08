@@ -1,3 +1,3 @@
-﻿<?php
+<?php
 $lang = 'no';
 require __DIR__ . '/inc/gallery_page.php';

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/store.php';
 require_once __DIR__ . '/activity_log.php';
 

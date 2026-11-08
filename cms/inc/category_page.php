@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // expects $lang and $slug set by the entry file
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/icons.php';
